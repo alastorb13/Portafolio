@@ -1,0 +1,197 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+body {
+  background-color: white;
+  color: black;
+}
+.contraste {
+  background-color: black;
+  color: white;
+}
+#centrado1 {
+  background-image: url("/media/centrada1.png");
+  background-size: cover;
+}
+#derecha1 {
+  background-image: url("/media/derecha1.png");
+  background-size: cover;
+}
+#izquierda1 {
+  background-image: url("/media/izquierda1.png");
+  background-size: cover;
+}
+
+.contenedorcentrado1 {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  margin: 5px 5px 5px 5px;
+  background-image: url("/media/centrada2.jfif");
+  background-size: cover;
+}
+.contenedorderecha {
+  width: 85vw;
+  height: 60vh;
+  background-image: url("/media/centrada1.png");
+  background-size: cover;
+  background-color: pink;
+  border: violet 5px solid;
+  display: flex;
+}
+.contenedorizquierda {
+  width: 85vw;
+  height: 60vh;
+  background-image: url("/media/centrada1.png");
+  background-size: cover;
+  background-color: pink;
+  border: violet 5px solid;
+  display: flex;
+}
+
+.margenhorizontal {
+  padding-left: 63px;
+  padding-right: 63px;
+  width: 100vw !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+#logo {
+  width: 170px;
+  height: 40px;
+}
+.centrado1 {
+  display: flex;
+  height: 540px;
+  width: 1198px;
+  background-image: url("media/centrada1.png");
+}
+.colordetextonegro {
+  color: black !important;
+}
+.colordetextogris {
+  color: gray !important;
+}
+.colordefondonegro {
+  background-color: black !important;
+}
+.veralign {
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+.veralign2 {
+  height: 100%;
+}
+.veralign3 {
+  display: flex;
+  align-items: center;
+  height: 404px;
+}
+.img-foto {
+  width: 400px;
+  height: auto;
+}
+.btn {
+  background-color: black;
+  border-radius: 30px;
+  margin-top: 2px;
+  height: 45px;
+}
+#input {
+  border: 2px solid rgb(243, 240, 228);
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+nav {
+  background-color: #0f0e17;
+}
+.burger {
+  background-image: url("../img/mobile/icon-menu.svg") !important;
+}
+#welcome-section {
+  min-height: 100vh;
+  max-height: 500px;
+  color: white;
+  background-color: #0f0e17;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#welcome-section img {
+  width: 300px;
+  height: 300px;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+
+#niko {
+  background-image: url("/media/centrada1.png");
+}
+#principe {
+  background-image: url("/media/derecha1.jfif");
+  height: 400px;
+}
+#amazonas {
+  background-image: url("/media/izquierda1.jfif");
+  height: 500px;
+}
+#niko,
+#principe,
+#amazonas {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.project-container {
+  position: relative;
+}
+.project-container__card {
+  position: absolute;
+  top: 220px;
+  min-width: 18rem;
+}
+
+#services,
+#form {
+  background: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+}
+#services ul {
+  list-style: none;
+}
+#services ul li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text-orange {
+  color: #ff8906;
+}
+.btn-outline-orange {
+  border: 2px solid #ff8906 !important;
+}
+
+.testimonial-name {
+  color: #f25f4c;
+}
+
+#form form {
+  max-width: 600px;
+}
+.img-circ {
+  border-radius: 50%;
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Portafolio Materialize con Bootstrap</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <link href="style/style.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Registro de usuario</h4>
+      <p>Por favor ingrese sus datos:</p>
+    </div>
+    <div class="modal-footer">
+        <form action="" id="form" onsubmit="functionSubmit(event)">
+            <input type="text" placeholder="Nombre completo" id="nombre" required>
+            <input type="email" placeholder="Correo electronico" id="correo" required>
+            <input type="password" placeholder="Contraseña" id="contraseña" required>
+        </br></br>  
+            <button id="" type="submit" onclick="captar()" class="">Registrar</button>
+        </form>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Inicio de sesion</h4>
+      <p>Por favor ingrese sus datos:</p>
+    </div>
+    <div class="modal-footer">
+        <form action="" id="form" onsubmit="functionSubmit(event)">
+            <input type="email" placeholder="Correo electronico" id="correo" required>
+            <input type="password" placeholder="Contraseña" id="contraseña" required>
+        </br></br>  
+            <button id="" type="submit" onclick="login()" class="">Registrar</button>
+        </form>
+    </div>
+  </div>
+
+  <!--  Navbar -->
+
+<nav class="black lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">LOGO</a>
+    
+        <ul class="right hide-on-med-and-down">
+          <li><a>Hola</a></li>
+          <li><a>Proyectos</a></li>
+          <li><a>Testimonios</a></li>
+          <li><a>contacto</a></li>
+          <div class="right veralign"><li class="modal-trigger  waves-light btn-small orange" href="#modal2">Iniciar Sesion</li><div>
+
+      </ul>
+      <ul id="nav-mobile" class="sidenav">
+          
+          <li><a>Hola</a></li>
+          <li><a>Proyectos</a></li>
+          <li><a>Testimonios</a></li>
+          <li><a>contacto</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        
+      <div>
+        
+        
+    </div>
+    </div>
+    </nav>
+  <main>
+  <!-- Primera vista -->
+    <div class="container contraste margenhorizontal">
+      <div class="section">
+        <div class="row">
+          <div class="col s5 push-s7">
+            <img class="img-foto" src="media/foto.png" alt="">
+          </div>
+          <div class="col s7 pull-s5 veralign3">
+            <div>
+            <h3 class="left">¡Hola a todos! <br> Soy Antonio Pereira</h3></br>
+            <h6 class="left colordetextogris">Developer que le encanta implementar diseños que inspiran y atraen a las personas </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Segunda Vista -->
+            
+    <section id="projects" class="container-fluid mb-md-3 mx-md-3">
+      <div
+        class="container px-md-5 text-start d-flex flex-column flex-md-row align-content-center justify-content-center my-md-3">
+        <h1>Parece magia, funciona con código.</h1>
+        <p style="max-width: 500px;">
+          A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar en proyectos retadores e
+          increíbles.
+        </p>
+      </div>
+      <div class="row container mx-auto">
+        <div id="niko" class="col-12 project-container">
+          <div class="card bg-black project-container__card">
+            <div class="card-body text-white pt-3">
+              <h5 class="project-title card-title">NIKO</h5>
+              <p class="card-text">
+                Niko es una de las marcas y proveedores de equipamiento deportivo más reconocidas y valiosas en todo el
+                mundo.
+              </p>
+              <div class="project-container__btns">
+                <a href="#" class="btn btn-outline-orange text-orange d-block mb-2">Ver código</a>
+                <a href="#" class="btn btn-orange d-block text-white">Ver proyecto completo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+                <div id="principe" class="col-12 col-md-6 project-container mb-5">
+          <div class="card bg-black project-container__card">
+            <div class="card-body text-white pt-3">
+              <h5 class="project-title card-title">Príncipe fresco</h5>
+              <p class="card-text">
+                La serie está protagonizada por Will Smith como una versión ficticia de sí mismo , un callejero.
+                -Adolescente inteligente nacido y criado...
+              </p>
+              <div class="project-container__btns">
+                <a href="#" class="btn btn-outline-orange text-orange d-block mb-2">Ver código</a>
+                <a href="#" class="btn btn-orange d-block text-white">Ver proyecto completo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                <div id="amazonas" class="col-12 col-md-6 project-container">
+          <div class="card bg-black project-container__card">
+            <div class="card-body text-white pt-3">
+              <h5 class="project-title card-title">Amazonas</h5>
+              <p class="card-text">
+                Amazonas es la empresa en internet de venta al por menor más grande del mundo, donde puedes encontrar
+                prácticamente...
+              </p>
+              <div class="project-container__btns">
+                <a href="#" class="btn btn-outline-orange text-orange d-block mb-2">Ver código</a>
+                <a href="#" class="btn btn-orange d-block text-white">Ver proyecto completo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="py-2 btn btn-outline-dark mx-auto" style="max-width: 300px;">Ver más proyectos</a>
+      </div>
+    </section>
+
+  <!-- Tercera Vista -->
+   <div id="services" class="container-fluid pt-3 pb-4">
+      <div class="container">
+        <h2 class="m-3">Servicios</h2>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <strong>Diseño</strong>
+            <ul>
+              <li>Experiencia de usuario</li>
+              <li>Interfaz de usuario</li>
+              <li>Aplicaciones web</li>
+              <li>Prueba de concepto</li>
+            </ul>
+            <a href="#" class="btn bg-black text-orange d-block">Ver servicios de diseño</a>
+          </div>
+          <div class="col-12 col-md-4">
+            <strong>Desarrollo</strong>
+            <ul>
+              <li>Aplicaiones móviles</li>
+              <li>Sitios web</li>
+              <li>Aplicaciones web progresivas</li>
+            </ul>
+            <a href="#" class="btn bg-black text-orange d-block">Ver servicios de diseño</a>
+          </div>
+          <div class="col-12 col-md-4">
+            <strong>Marca</strong>
+            <ul>
+              <li>Identidad de la marca</li>
+              <li>Estrategia de marca</li>
+            </ul>
+            <a href="#" class="btn bg-black text-orange d-block">Ver servicios de diseño</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<!--Vista 4-->
+
+<div class="container-fluid bg-black pt-3">
+      <h2 class="text-white">Testimonios</h2>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="card bg-black mx-auto" style="width: 18rem;">
+            <div class="card-body">
+              <div>
+                <img src="media/JuanAntonio.png" class="img-circ" alt="juan-antonio" width="48" height="48">
+                <span class="testimonial-name">Juan Antonio</span>
+              </div>
+              <p class="text-white">
+                Tengo algunos años trabajando con Javascript y aún así aprendí varias cosas importantes de Antonio y
+                como utiliza Javascript en el día a día.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card bg-black mx-auto" style="width: 18rem;">
+            <div class="card-body">
+              <div>
+                <img src="media/AlberFlorez.png"class="img-circ" alt="Albert Flores" width="48" height="48">
+                <span class="testimonial-name">Albert Flores</span>
+              </div>
+              <p class="text-white">
+                Me gusto ver el porqué de las cosas del core de React, saber la magia que ocurre por detrás, excelente
+                profesor Antonio gran vocación.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card bg-black mx-auto" style="width: 18rem;">
+            <div class="card-body">
+              <div>
+                <img src="media/DarleneRobertson.png"class="img-circ" alt="Darlene Robertson" width="48" height="48">
+                <span class="testimonial-name">Darlene Robertson</span>
+              </div>
+              <p class="text-white">
+                Ayuda a entender el porqué de las cosas, lo cual nos da el poder de aprovechar mejor el lenguaje y las
+                herramientas que tenemos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card bg-black mx-auto" style="width: 18rem;">
+            <div class="card-body">
+              <div>
+                <img src="media/JaneCooper.png"class="img-circ" alt="Jane Cooper" width="48" height="48">
+                <span class="testimonial-name">Jane Cooper</span>
+              </div>
+              <p class="text-white">
+                La forma como explica y trabaja los temas Antonio, me ha ayudado a comprender y sacarle el mayor
+                provecho a HTML y CSS.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card bg-black mx-auto" style="width: 18rem;">
+            <div class="card-body">
+              <div>
+                <img src="media/ElanorPena.png"class="img-circ" alt="Eleanor Pena" width="48" height="48">
+                <span class="testimonial-name">Eleanor Pena</span>
+              </div>
+              <p class="text-white">
+                Antonio ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo. Lo que nos hubiera llevado
+                6 meses solo les llevó 1,5 meses.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card bg-black mx-auto" style="width: 18rem;">
+            <div class="card-body">
+              <div>
+                <img src="media/GuyHawkins.png" class="img-circ"alt="Guy Hawkinso" width="48" height="48">
+                <span class="testimonial-name">Guy Hawkinso</span>
+              </div>
+              <p class="text-white">
+                Antonio ha superado mis expectativas desde el diseño hasta el desarrollo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Vista 5 -->
+<div class="contenedorcentrado1">
+  <img crs="media/centrada2.jfif" id=""></img>
+</div>
+<!-- Vista 6 -->
+<div id="form" class="container-fluid py-5">
+      <form class="bg-black px-3 py-3 mx-auto">
+        <h2 class="text-white">Contacto</h2>
+        <p class="text-white">
+          Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto.
+        </p>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Nombre completo">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Correo electrónico">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="5" cols="46" placeholder="Mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn bg-orange text-white d-block">Enviar mensaje</button>
+      </form>
+    </div>
+<!-- footer -->
+
+
+    <footer class="container-fluid bg-black">
+      <h2>LOGO</h2>
+      <p>        Hecho con 🤍 de Antonio      </p>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
